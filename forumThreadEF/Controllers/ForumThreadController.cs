@@ -6,11 +6,9 @@ namespace forumThreadEF.Controllers
     [Route("api/forumThread")]
     public class ForumThreadController : ControllerBase
     {
-        private readonly ILogger<ForumThreadController> _logger;
-
-        public ForumThreadController(ILogger<ForumThreadController> logger)
+        public ForumThreadController()
         {
-            _logger = logger;
+            
         }
 
         [HttpGet("abc")]
